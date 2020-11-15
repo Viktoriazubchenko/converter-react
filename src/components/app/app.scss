@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.day {
+    background: url(./day.jpg) center center/cover no-repeat;
+}
+.monster {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.converter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.place {
+    height: 100vh;
+    width: 100%;
+}
+
+.night {
+    background: url(./night.jpg) center center/cover no-repeat;
+}
+
+.dance {
+    background: url(./party.jpg) center center/cover no-repeat;
+    .converter{
+        display: none;
+    }
+    .monster {
+        width: 100%;
+    }
+}

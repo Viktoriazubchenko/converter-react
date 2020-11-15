@@ -1,0 +1,133 @@
+@keyframes nana {
+    0% {
+        left: 30px;
+    }
+    35% {
+        left: 45px;
+    }
+    45% {
+        left: 60px;
+    }
+    55% {
+        left: 45px;
+    }
+    100% {
+        left: 30px;
+    }
+}
+
+@keyframes snorring {
+   0% {
+       transform: scale(1);
+   }
+   25% {
+    transform: scale(1.1);
+    }
+    50% {
+    transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+   100% {
+    transform: scale(1);
+    }
+}
+
+.mouth {
+    position: relative;
+    top: 300px;
+    height: 100px;
+    background-color: #221A24;
+    border-radius: 100% 100% / 15px 15px 150px 150px;
+    overflow: hidden;
+  }
+ .sleeping {
+     position: relative;
+     top: 100px;
+     left: -200px;
+     font-size: 100px;
+     color: transparent;
+     letter-spacing: 20px;
+     font-weight: 700;
+    
+ }
+ .first{
+     font-size: 150px;
+ }
+ .third{
+    font-size: 50px;
+}
+  
+  .tooth {
+    position: relative;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px 100px / 0 0 100px 100px;
+    top: -25px;
+    left: 20px;
+    box-shadow:
+      60px 0 0 0 #fff,
+      155px 0 0 0 #fff;
+  }
+  
+  .tongue {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 40px;
+    left: 30px;
+    border-radius: 100%;
+    background-color: #8a1a3e;
+    box-shadow: 70px 0px #8a1a3e;
+    animation: nana 1.5s infinite;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 100%;
+      background-color: #de3350;
+      width: 86px;
+      height: 115px;
+      top: -29px;
+      right: 16px;
+      transform: scale(1, 0.5);
+      box-shadow: 70px 0px #de3350;
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      border-radius: 100%;
+      background-color: #fff;
+      width: 5px;
+      height: 5px;
+      right: -40px;
+      top: 20px;
+      box-shadow: -13px -12px 0 2px #fff;
+    }
+  }
+  
+.mouth-closed {
+    .mouth{
+        height: 50px;
+        border-radius: 100%;
+    }
+    .tongue{
+        animation: none;
+    }
+    .sleeping {
+        color: rgba(182, 145, 216, 0.5);
+        animation: snorring 1.5s infinite; 
+        -webkit-text-stroke: 2px rgba(0, 0, 0, 0.3); 
+    }
+}
+
+.party-mouth {
+    .mouth {
+        height: 150px;
+        border-radius:100%;
+    }
+    
+}
